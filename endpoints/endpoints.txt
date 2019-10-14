@@ -1,0 +1,34 @@
+User
+/user/:userid                           GET         Get a user
+/user/:userid/gallery                   POST        Create a user gallery
+/user/:userid/gallery/:galleryid        GET         Get a user gallery
+/user/:userid/gallery/:galleryid        DELETE      Delete a user gallery
+/user/:userid/gallery/:galleryid        PUT         Update a user gallery
+
+Gallery 
+/gallery/:galleryid                     GET         Get a gallery
+/gallery                                POST        Create a gallery
+/gallery/:galleryid                     DELETE      Delete a gallery
+/gallery/:galleryid                     PUT         Update a gallery
+/gallery/:galleryid/photo/:photoid      GET         Get a gallery photo
+/gallery/:galleryid/photo               POST        add a gallery photo
+/gallery/:galleryid/photo/:photoid      DELETE      Delete a gallery photo
+/gallery/:galleryid/photo:photoid       PUT         Update a gallery photo
+/gallery/:galleryid/album/:albumid      GET         Get a gallery album
+/gallery/:galleryid/:galleryid/album    POST        add a gallery album
+/gallery/:galleryid/album/:albumid      DELETE      Delete a gallery album
+/gallery/:galleryid/album:albumid       PUT         Update a gallery album
+
+Album
+/album/:albumid                         GET         Get a album
+/album                                  POST        Create a album
+/album/:albumid                         DELETE      Delete a album
+/album/:albumid                         PUT         Update a album
+/album/:albumid/photo/:photoid          GET         Get a album photo
+/album/:albumid/photo                   POST        add a album photo
+/album/:albumid/photo/:photoid          DELETE      Delete a album photo
+/album/:albumid/photo:photoid           PUT         Update a album photo
+
+Photo
+/photo/:id                              GET         Get a photo
+/photo/:id                              PUT         Update a photo

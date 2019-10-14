@@ -1,0 +1,45 @@
+{ "collection" :
+    {
+      "version" : "1.0",
+      "href" : "http://example.com/user/",
+
+      "error" : {
+        "title" : "Server Error",
+        "code" : "0001",
+        "message" : "Generic error response"
+      },
+      
+      "links" : [
+        {"rel" : "preload", "href" : "http://example.com/user/1", "as" : "fetch", "type" : "application/vnd.collection+json", "crossorigin" : "anonymous"}
+      ],
+      
+      "items" : [
+        {
+          "href" : "http://example.com/user/1/gallery/1",
+          "data" : [
+            {"name" : "gallery-title", "value" : "My First Gallery", "prompt" : "Gallery Title"}
+          ],
+          "links" : [
+            {"href" : "http://example.com/user/1/gallery/1", "rel" : "gallery", "prompt" : "Gallery"}
+          ]
+        },
+
+        {
+          "href" : "http://example.com/user/1/gallery/2",
+          "data" : [
+            {"name" : "gallery-title", "value" : "My Second Gallery", "prompt" : "Gallery Title"}
+          ],
+          "links" : [
+            {"href" : "http://example.com/user/1/gallery/2", "rel" : "gallery", "prompt" : "Gallery"}
+          ]
+        }   
+      ],
+   
+      "template" : {
+        "data" : [
+          {"name" : "gallery-title", "value" : "", "prompt" : "Gallery Title"}
+          
+        ]
+      }
+    } 
+}

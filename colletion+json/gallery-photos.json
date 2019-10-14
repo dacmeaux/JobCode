@@ -1,0 +1,47 @@
+{ "collection" :
+    {
+      "version" : "1.0",
+      "href" : "http://example.com/gallery/",
+      
+      "links" : [
+        {"rel" : "preload", "href" : "http://example.com/gallery/1", "as" : "fetch", "type" : "application/vnd.collection+json", "crossorigin" : "anonymous"}
+      ],
+
+      "error" : {
+        "title" : "Server Error",
+        "code" : "0001",
+        "message" : "Generic error response"
+      },
+      
+      "items" : [
+        {
+          "href" : "http://example.com/gallery/1/photo/1",
+          "data" : [
+            {"name" : "photo-title", "value" : "My First Photo", "prompt" : "Photo Title"},
+            {"name" : "gallery-id", "value" : "1", "prompt" : "Gallery ID"}
+          ],
+          "links" : [
+            {"href" : "http://example.com/gallery/1/photo/1", "rel" : "image", "prompt" : "Photo", "render" : "image"}
+          ]
+        },
+
+        {
+            "href" : "http://example.com/gallery/1/photo/2",
+            "data" : [
+              {"name" : "photo-title", "value" : "My Second Photo", "prompt" : "Photo Title"},
+              {"name" : "gallery-id", "value" : "1", "prompt" : "Gallery ID"}
+            ],
+            "links" : [
+              {"href" : "http://example.com/gallery/1/photo/2", "rel" : "image", "prompt" : "Photo", "render" : "image"}
+            ]
+        }   
+      ],
+   
+      "template" : {
+        "data" : [
+          {"name" : "photo-title", "value" : "", "prompt" : "Photo Title"},
+          {"name" : "gallery-id", "value" : "1", "prompt" : "Gallery ID"}
+        ]
+      }
+    } 
+}
