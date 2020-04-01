@@ -1,5 +1,5 @@
 <?php
-    function db_getConnection($db, $usr, $pass = null, $driver = null)
+    function db_getConnection($db, $usr, $pass = null, $driver_name = null)
     {
      // Grab a PDO connection using the specified driver...
      $connect_string = $driver_name.':host='.$host.';dbname='.$db.';charset=utf8';

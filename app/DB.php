@@ -5,7 +5,8 @@
  *
  * @return PDO|null
  */
-function dbConnect(){
+function dbConnect()
+{
     $connect_string = 'mysql:host=localhost;dbname=Photo_Gallery;charset=utf8';
     $db_obj = null;
 
@@ -29,10 +30,11 @@ function dbConnect(){
  * @param array $query_data
  * @return array|PDOStatement
  */
-function executeQuery($query, $query_data){
+function executeQuery($query, $query_data)
+{
     $dbh = dbConnect();
 
-    $prep = $dbh ->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+    $prep = $dbh->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
     $stmt = $prep->execute($query_data);
 
     if( !$stmt )
